@@ -1,0 +1,399 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Epidemic Prediction</title>
+
+  <!-- Bootstrap -->
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}">
+  <link href="{%static 'css/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/animate.css'%}" rel="stylesheet" />
+  <link href="{%static 'css/prettyPhoto.css'%}" rel="stylesheet">
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+          <a href="{% url 'home'%}" class="brand">Epidemic Prediction</a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'home'%}">Home</a></li>
+            <li><a href="{% url 'about'%}">About Us</a></li>
+            <li><a href="{% url 'helpline'%}">View Helpines</a></li>
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="{% url 'map'%}">Map View</a></li>
+            <li><a href="{% url 'covid'%}">Covid19</a></li>
+
+
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
+  <div id="home">
+    <div class="slider">
+      <div id="about-slider">
+        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-xs">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="{% static 'images/download1.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/download2.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/download3.jpg' %}" class="img-responsive" alt="">
+            </div>
+          </div>
+
+          <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+
+          <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+        <!--/#carousel-slider-->
+      </div>
+      <!--/#about-slider-->
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="center">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>Epidemic Diseases</h2>
+          <hr>
+          <p class="lead">Below are some Epidemic Diseases description and their prevention techniques</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <!--/.col-sm-6-->
+
+        <div class="col-sm-6 wow fadeInDown">
+          <div class="accordion">
+            <div class="panel-group" id="accordion1">
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                      Influenza
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+
+                <div id="collapseOne1" class="panel-collapse collapse ">
+                  <div class="panel-body">
+                    <div class="media accordion-inner">
+
+                      <div class="media-body">
+
+                        <p><b>Influenza, commonly known as the flu, is an infectious disease caused by an influenza virus. Symptoms can be mild to severe.The most common symptoms include: high fever, runny nose, sore throat, muscle pains, headache, coughing, and feeling tired. These symptoms typically begin two days after exposure to the virus and most last less than a week. <br><br>The cough, however, may last for more than two weeks. In children, there may be diarrhea and vomiting, but these are not common in adults.Diarrhea and vomiting occur more commonly in gastroenteritis, which is an unrelated disease and sometimes inaccurately referred to as "stomach flu" or the "24-hour flu". Complications of influenza may include viral pneumonia, secondary bacterial pneumonia, sinus infections, and worsening of previous health problems such as asthma or heart failure.<br><br>
+Three of the four types of influenza viruses affect humans: Type A, Type B, and Type C. Type D has not been known to infect humans, but is believed to have the potential to do so.Usually, the virus is spread through the air from coughs or sneezes. This is believed to occur mostly over relatively short distances. It can also be spread by touching surfaces contaminated by the virus and then touching the mouth or eyes. A person may be infectious to others both before and during the time they are showing symptoms. The infection may be confirmed by testing the throat, sputum, or nose for the virus</b><br></p>
+
+<div class="panel panel-default">
+  <div id="p1" class="panel-heading active">
+    <h3 class="panel-title">
+      <a  class="accordion-toggle" data-toggle="collapse"  href="#collapseP1">
+        Prevention & Precautions
+        <i class="fa fa-angle-right pull-right"></i>
+      </a>
+    </h3>
+  </div>
+
+  <div id="collapseP1" class="panel-collapse collapse ">
+    <div class="panel-body">
+      <div class="media accordion-inner">
+
+        <div class="media-body">
+
+          <p><b>Influenza, </b><br></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                      Dengue
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseTwo1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Dengue is fast emerging pandemic-prone viral disease in many parts of the world. Dengue flourishes in urban poor areas, suburbs and the countryside but also affects more affluent neighbourhoods in tropical and subtropical countries.<br><br>
+
+Dengue is a mosquito-borne viral infection causing a severe flu-like illness and, sometimes causing a potentially lethal complication called severe dengue. The incidence of dengue has increased 30-fold over the last 50 years. Up to 50-100 million infections are now estimated to occur annually in over 100 endemic countries, putting almost half of the world’s population at risk.<br><br>
+
+Severe dengue (previously known as dengue haemorrhagic fever) was first recognized in the 1950s during dengue epidemics in the Philippines and Thailand. Today it affects Asian and Latin American countries and has become a leading cause of hospitalization and death among children and adults in these regions.<br><br>
+
+The full life cycle of dengue fever virus involves the role of mosquito as a transmitter (or vector) and humans as the main victim and source of infection.<br></p>
+<div class="panel panel-default">
+  <div id="p1" class="panel-heading active">
+    <h3 class="panel-title">
+      <a  class="accordion-toggle" data-toggle="collapse"  href="#collapseP2">
+        Prevention & Precautions
+        <i class="fa fa-angle-right pull-right"></i>
+      </a>
+    </h3>
+  </div>
+
+  <div id="collapseP2" class="panel-collapse collapse ">
+    <div class="panel-body">
+      <div class="media accordion-inner">
+
+        <div class="media-body">
+
+          <p><b>Influenza, </b><br></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                      Malaria
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseThree1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Malaria: An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion. Falciparum malaria is the most deadly type.<br><br>
+
+The symptoms of malaria include cycles of chills, fever, sweats, muscle aches and headache that recur every few days. There can also be vomiting, diarrhea, coughing, and yellowing (jaundice) of the skin and eyes. Persons with severe falciparum malaria can develop bleeding problems, shock, kidney and liver failure, central nervous system problems, coma, and die. Travelers to areas with malaria are advised to take medications to prevent infection if exposed. The treatment of malaria is with oral or intravenous medications, including chloroquine, mefloquine (Larium), or atovaquone/proguanil (Malarone).<br><br>
+
+Malaria transmission occurs primarily between dusk and dawn because of the nocturnal feeding habits of Anopheles mosquitoes. One should therefore take protective measures to reduce contact with mosquitoes, especially during these hours. These measures include remaining in well-screened areas, using mosquito nets, and wearing clothes that cover most of the body.<br></p>
+<div class="panel panel-default">
+  <div id="p1" class="panel-heading active">
+    <h3 class="panel-title">
+      <a  class="accordion-toggle" data-toggle="collapse"  href="#collapseP3">
+        Prevention & Precautions
+        <i class="fa fa-angle-right pull-right"></i>
+      </a>
+    </h3>
+  </div>
+
+  <div id="collapseP3" class="panel-collapse collapse ">
+    <div class="panel-body">
+      <div class="media accordion-inner">
+
+        <div class="media-body">
+
+          <p><b>Influenza, </b><br></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                      Zika
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseFour1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Zika virus is a mosquito-borne flavivirus that was first identified in Uganda in 1947 in monkeys. It was later identified in humans in 1952 in Uganda and the United Republic of Tanzania.<br><br>
+Outbreaks of Zika virus disease have been recorded in Africa, the Americas, Asia and the Pacific. From the 1960s to 1980s, rare sporadic cases of human infections were found across Africa and Asia, typically accompanied by mild illness.<br><br>
+The incubation period (the time from exposure to symptoms) of Zika virus disease is estimated to be 3–14 days. The majority of people infected with Zika virus do not develop symptoms. Symptoms are generally mild including fever, rash, conjunctivitis, muscle and joint pain, malaise, and headache, and usually last for 2–7 days<br></p>
+
+
+
+<div class="panel panel-default">
+  <div id="p1" class="panel-heading active">
+    <h3 class="panel-title">
+      <a  class="accordion-toggle" data-toggle="collapse"  href="#collapseP4">
+        Prevention & Precautions
+        <i class="fa fa-angle-right pull-right"></i>
+      </a>
+    </h3>
+  </div>
+
+  <div id="collapseP4" class="panel-collapse collapse ">
+    <div class="panel-body">
+      <div class="media accordion-inner">
+
+        <div class="media-body">
+
+          <p><b>
+Protection against mosquito bites during the day and early evening is a key measure to prevent Zika virus infection. Special attention should be given to prevention of mosquito bites among pregnant women, women of reproductive age, and young children.<br><br>
+
+Personal protection measures include wearing clothing (preferably light-coloured) that covers as much of the body as possible; using physical barriers such as window screens and closed doors and windows; and applying insect repellent to skin or clothing that contains DEET, IR3535 or icaridin according to the product label instructions.<br><br>
+
+Young children and pregnant women should sleep under mosquito nets if sleeping during the day or early evening.  Travellers and those living in affected areas should take the same basic precautions described above to protect themselves from mosquito bites. <br><br>
+
+Aedes mosquitoes breed in small collections of water around homes, schools, and work sites. It is important to eliminate these mosquito breeding sites, including: covering water storage containers, removing standing water in flower pots, and cleaning up trash and used tires. Community initiatives are essential to support local government and public health programs to reduce mosquito breeding sites.  Health authorities may also advise use of larvicides and insecticides to reduce mosquito populations and disease spread. </b><br></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading active">
+                  <h3 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive1">
+                      COVID-19
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div id="collapseFive1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome.<br> The disease was first identified in 2019 in Wuhan, the capital of Hubei, China, and has since spread globally, resulting in the 2019–20 coronavirus pandemic.<br> Common symptoms include fever, cough, and shortness of breath. Muscle pain, sputum production, diarrhea, and sore throat are less common.<br>While the majority of cases result in mild symptoms some progress to pneumonia and multi-organ failure</p>
+                    <a href="http://www.covid19india.org">Click to track Covid19 in India</a>
+
+<div class="panel panel-default">
+  <div id="p1" class="panel-heading active">
+    <h3 class="panel-title">
+      <a  class="accordion-toggle" data-toggle="collapse"  href="#collapseP5">
+        Measures & Precautions
+        <i class="fa fa-angle-right pull-right"></i>
+      </a>
+    </h3>
+  </div>
+
+  <div id="collapseP5" class="panel-collapse collapse ">
+    <div class="panel-body">
+      <div class="media accordion-inner">
+
+        <div class="media-body">
+
+          <p><b>Preventive measures to reduce the chances of infection.<br></b><br></p>
+          <ul>
+            <li>Staying at home
+            <li>Avoiding crowded places
+            <li>Washing hands with soap and warm water often and for at least 20 seconds
+            <li>Practicing good respiratory hygiene and avoiding touching the eyes, nose, or mouth with unwashed hands
+            <ul/>
+            <a href="http://www.covid19india.org">Click to track Covid19 in India</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--/#accordion1-->
+          </div>
+        </div>
+
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+  <!--/#about-->
+
+  <footer id="footer" class="midnight-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="text-center">
+            <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+          </div>
+          &copy; EPIDEMIC PREDICTION.
+           All Rights Reserved.
+
+        </div>
+
+          <div class="col-lg-12">
+            <div class="social">
+              <ul class="social-share">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="{% static 'js/jquery.js'%}"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/jquery.prettyPhoto.js'%}"></script>
+  <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js'%}"></script>
+  <script src="{% static 'js/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'js/main.js'%}"></script>
+  <script src="{% static 'contactform/contactform.js'%}"></script>
+
+</body>
+
+</html>

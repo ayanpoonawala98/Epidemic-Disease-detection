@@ -1,0 +1,184 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Epidemic Prediction</title>
+
+  <!-- Bootstrap -->
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}">
+  <link href="{%static 'css/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/animate.css'%}" rel="stylesheet" />
+  <link href="{%static 'css/prettyPhoto.css'%}" rel="stylesheet">
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+          <a href="{% url 'home'%}" class="brand">Epidemic Prediction</a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'home'%}">Home</a></li>
+            <li><a href="{% url 'about'%}">About Us</a></li>
+            <li><a href="{% url 'helpline'%}">View Helpines</a></li>
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="{% url 'map'%}">Map View</a></li>
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="bread-bar">
+      	<div class="container">
+          	<div class="row">
+              	<div class="col-md-8 col-sm-6 col-xs-8">
+                      <ol class="breadcrumb">
+                          <li><a href="index.html">Home</a></li>
+                          <li class="active">About Us</li>
+                      </ol>
+              	</div>
+                  <div class="col-md-4 col-sm-6 col-xs-4">
+                  </div>
+              </div>
+        	</div>
+      </div>
+  <div class="aboutus-secktion paddingTB60">
+      <div class="container">
+          <div class="row">
+                  	<div class="col-md-6">
+                      	<h1 class="strong">Who we are and<br>what we do</h1>
+                          <p class="lead">We are Computer engineering students<br>We are predicting epidemic diseases</p>
+                      </div>
+                      <div class="col-md-6">
+
+                        <br>
+                        <br>
+                      </div>
+  </div>
+      </div>
+  </div>
+  <div class="container team-sektion paddingTB60">
+  	<div class="row">
+  		<div class="site-heading text-center">
+  						<h3>Our Team</h3>
+  						<div class="border"></div>
+  					</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-4 team-box">
+  		    <div class="team-img thumbnail">
+  		        <img src="",alt="Sahil">
+  		    <div class="team-content">
+  		        <h3>Sahil Sakharkar</h3>
+  		        <div class="border-team"></div>
+  		        <p>Developer</p>
+  		        <div class="social-icons">
+                 <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                 <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+  	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+  	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+  	        </div>
+  		    </div>
+  		</div>
+  	</div>
+  	    <div class="col-md-4 team-box">
+  		    <div class="team-img thumbnail">
+  		        <img src="",alt="Ayan">
+  		    <div class="team-content">
+  		        <h3>Ayan Poonawala</h3>
+  		        <div class="border-team"></div>
+  		        <p>DESC</p>
+  		        <div class="social-icons">
+                 <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                 <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+  	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+  	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+  	        </div>
+  		    </div>
+  		</div>
+  	</div>
+  	    <div class="col-md-4 team-box">
+  		    <div class="team-img thumbnail">
+  		        <img src="",alt="Salman">
+  		    <div class="team-content">
+  		        <h3>Salman Ansari</h3>
+  		        <div class="border-team"></div>
+  		        <p>DESC.</p>
+  		        <div class="social-icons">
+                 <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                 <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+  	            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+  	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+  	        </div>
+  		    </div>
+  		</div>
+  	</div>
+
+  </div>
+  </div>
+  		</div>
+
+
+  </div>
+
+
+
+
+
+
+
+    <footer id="footer" class="midnight-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="text-center">
+              <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+            </div>
+            &copy; EPIDEMIC PREDICTION.
+             All Rights Reserved.
+
+          </div>
+
+            <div class="col-lg-12">
+              <div class="social">
+                <ul class="social-share">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!--/#footer-->
+
+   
+  </body>
+
+  </html>
